@@ -5,8 +5,6 @@ from scrape import connpass
 def main():
     content = getContent(sys.argv[1])
     id_list = getidlist(content)
-    for tid in id_list:
-        print tid
 
 def getidlist(content):
     event = connpass.EventScraper(content)
@@ -16,6 +14,7 @@ def getidlist(content):
         url = "http://connpass.com/user/" + user
         content = getContent(url)
         user = connpass.UserScraper(content)
+        print("get id: " + user.twitter_id + "\n")
         id_list.append(user.twitter_id)
     return id_list
 
