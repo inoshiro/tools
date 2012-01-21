@@ -1,5 +1,5 @@
-イベント管理サイトのHTMLをスクレイピングするクラスを書いた。
+イベント管理サイトのHTMLをスクレイピングして、ユーザID、twitterIDなどを抽出する。
 
-$ python from_connpass.py (URL)
+このコードを使ってtwitterのリストを作成した例。
 
-上記はサンプルのスクリプト。コマンドライン引数でイベントページのURLを指定すると、参加者のTwitter IDを出力する。
+https://gist.github.com/1651991
